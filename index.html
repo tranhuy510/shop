@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Lazada</title>
+    <!-- <link rel="icon" href="https://www.shareicon.net/download/2016/06/22/612401_music.ico" type="image/x-icon"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <!-- Begin: Navigation -->
+            <nav class="navbar row">
+                <ul class="navbar__list">
+                    <li class="navbar__item navbar__item--has-qr">
+                        TIẾT KIỆM HƠN VỚI ỨNG DỤNG
+                        <div class="navbar__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR Code" class="navbar__qr-img">
+                            <div class="navbar__qr-apps">
+                                <a href="https://bit.ly/lazada-ios-app?spm=a2o4n.tm80093199.header.3.60275995CdJCBk&scm=1003.4.icms-zebra-5001419-2692842.OTHER_5286164141_2448056" class="navbar__download-link">
+                                    <img src="./assets/img/app_store.png" alt="App Store" class="navbar__qr-download-img">
+                                </a>
+                                <a href="https://bit.ly/lazada-android-app?spm=a2o4n.tm80093199.header.4.60275995CdJCBk&scm=1003.4.icms-zebra-5001419-2692842.OTHER_5286164141_2448056" class="navbar__download-link">
+                                    <img src="./assets/img/google_play.png" alt="Google Play" class="navbar__qr-download-img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__item">BÁN HÀNG CÙNG LAZADA</li>
+                    <li class="navbar__item navbar__item--care">
+                        CHĂM SÓC KHÁCH HÀNG
+                        <div class="navbar__care">
+                            <div class="navbar__care-content">
+                                <i class="navbar__care-icon fa-solid fa-person-military-pointing"></i>
+                                <a href="" class="navbar__care-info">Trung tâm hỗ trợ</a>
+                            </div>
+                            <div class="navbar__care-content">
+                                <i class="navbar__care-icon fa-solid fa-credit-card"></i>
+                                <a href="" class="navbar__care-info">Đơn hàng & Thanh toán</a>
+                            </div>
+                            <div class="navbar__care-content">
+                                <i class="navbar__care-icon fa-solid fa-truck-fast"></i>
+                                <a href="" class="navbar__care-info">Giao hàng & Nhận hàng</a>
+                            </div>
+                            <div class="navbar__care-content">
+                                <i class="navbar__care-icon fa-sharp fa-solid fa-arrow-right-arrow-left"></i>
+                                <a href="" class="navbar__care-info">Đổi trả hàng & Hoàn tiền</a>
+                            </div>
+                            <div class="navbar__care-content">
+                                <i class="navbar__care-icon fa-solid fa-phone-volume"></i>
+                                <a href="" class="navbar__care-info">Liên hệ với Lazada</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar__item">KIỂM TRA ĐƠN HÀNG</li>
+                    <li class="navbar__item">ĐĂNG NHẬP</li>
+                    <li class="navbar__item">ĐĂNG KÝ</li>
+                    <li class="navbar__item">CHANGE LANGUAGE</li>
+                </ul>
+            </nav>
+            <div class="grid">
+                <!-- End: Navigation -->
+    
+                <!-- Header Content -->
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img src="./assets/img/logo.png" alt="Logo" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm trên Lazada">
+                        <div class="header__search-history">
+                            <h3 class="search-history__heading">Lịch sử tìm kiếm</h3>
+                            <ul class="search-history__list">
+                                <li class="search-history__list-item">
+                                    <a href="">TV Samsung</a>
+                                </li>
+                                <li class="search-history__list-item">
+                                    <a href="">TV LG</a>
+                                </li>
+                                <li class="search-history__list-item">
+                                    <a href="">TV led 55 inch</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart-notice">5</span>
+                            <!-- No cart: header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no_cart.png" alt="Không có sản phẩm" class="header__cart-list-no-cart-img">
+                                <span class="header__cart-list-mgs">
+                                    Chưa có sản phẩm
+                                </span>
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/76101c4630c4aca8d2d9fa374a7fd225.jpg_400x400q80.jpg_.webp" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Ốp lưng iphone nơ heo not fat</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">10000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Deal chớp nhoáng
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/f4ba6a1ae7a7f250e0e8a3e47b59d852.jpg_400x400q80.jpg_.webp" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Áo khoác Nam Nữ dáng Unisex</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">530000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Deal chớp nhoáng
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/f829a3d57fd4c1b2637488c12fae6bac.jpg_400x400q80.jpg_.webp" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Nước hoa nam cao cấp</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">33001đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Deal chớp nhoáng
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/c9229f1313ef9a56777f3073a82b3ec7.png_400x400q80.jpg_.webp" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">HW67 Plus Smartwatch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">554000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Ưu đãi cho chàng
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/b605846618316b1770d7d28842b6bd8e.jpg_400x400q80.jpg_.webp" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Đồ chơi chó cứu hộ Paw Patrol</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">40000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">3</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Sale sập sàn
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__banner">
+                        <img src="./assets/img/header_banner.png" alt="Banner" class="header__banner-img">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Begin: Slider -->
+            <div class="slider">
+                <div class="grid">
+                    <div class="category-wrap">
+                        <nav class="category">
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thiết Bị Điện Tử</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                    <div class="category-item__sub">
+                                        <ul class="category-item__sublist">
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Điện thoại di động</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Máy tính bảng</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Laptop</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Máy tính để bàn</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Âm thanh</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Camera giám sát</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Máy ảnh kỹ thuật số</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Máy quay phim & Máy quay ...</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Máy hình vi tính</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Máy in</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Đồng hồ thông minh</a>
+                                            </li>
+                                            <li class="category-item__sublist-item">
+                                                <a href="#" class="category-item__sublist-link">Máy chơi game</a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="category-item__sublist-item"></a>
+                                    </div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phụ Kiện Điện Tử</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">TV & Thiết Bị Điện Gia Dụng</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sức Khỏe & Làm Đẹp</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Hàng Mẹ, Bé & Đồ Chơi</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Siêu Thị Tạp Hóa</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Hàng Gia Dụng & Đời Sống</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thời Trang & Phụ Kiện Nữ</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thời Trang & Phụ Kiện Nam</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thời Trang & Phụ Kiện Trẻ Em</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thể Thao & Du Lịch</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Ôtô, Xe Máy & Thiết Bị Định Vị</a>
+                                    <i class="category-item__icon fa-solid fa-angle-right"></i>
+                                </li>
+                            </ul>
+                        </nav>
+                        <img src="./assets/img/slider_banner.webp" alt="" class="slider-banner">
+                    </div>
+                </div>
+            </div>
+            <!-- End: Slider -->
+
+            <!-- Content -->
+            <div class="content">
+                <div class="grid">
+                    <div class="switch">
+                        <button class="switch-btn">
+                            <div class="switch-btn__icon-wrap">
+                                <img src="./assets/img/switch_btn_1.png" alt="" class="switch-btn__icon">
+                            </div>
+                            <span class="switch-btn__name">LazMall</span>
+                        </button>
+                        <button class="switch-btn">
+                            <div class="switch-btn__icon-wrap">
+                                <img src="./assets/img/switch_btn_2.png" alt="" class="switch-btn__icon">
+                            </div>
+                            <span class="switch-btn__name">Mã Giảm Giá</span>
+                        </button>
+                        <button class="switch-btn">
+                            <div class="switch-btn__icon-wrap">
+                                <img src="./assets/img/switch_btn_3.png" alt="" class="switch-btn__icon">
+                            </div>
+                            <span class="switch-btn__name">Nạp Thẻ & eVoucher</span>
+                        </button>
+                        <button class="switch-btn">
+                            <div class="switch-btn__icon-wrap">
+                                <img src="./assets/img/switch_btn_4.png" alt="" class="switch-btn__icon">
+                            </div>
+                            <span class="switch-btn__name">LazGlobal</span>
+                        </button>
+                    </div>
+
+                    <!-- Deal chớp nhoáng -->
+                    <div class="flash-sale">
+                        <div class="title-wrap">
+                            <span class="title">Deal chớp nhoáng</span>
+                        </div>
+                        <div class="flash-sale-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2">
+                                    <div class="flash-sale-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/9164440f1e5a0129d245742231fec503.jpg_400x400q80.jpg_.webp" alt="" class="flash-sale-product__item-img">
+                                        <div class="flash-sale-product__item-body">
+                                            <h4 class="flash-sale-product__item-name">
+                                                Xịt thơm miệng khử mùi tức thì kháng khuẩn the mát an toàn khi nuốt, xịt khử mùi thức ăn, khử mùi hành tỏi, thơm mát tức thì
+                                            </h4>
+                                            <p class="flash-sale-product__item-price">20000 ₫</p>
+                                            <div class="flash-sale-product__item-discount">
+                                                <span class="flash-sale-product__item-old-price">45.000 ₫</span>
+                                                <span class="flash-sale-product__item-percent">-56%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="flash-sale-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/0348d1a4d8ca582037d64ba7363170df.jpg_400x400q80.jpg_.webp" alt="" class="flash-sale-product__item-img">
+                                        <div class="flash-sale-product__item-body">
+                                            <h4 class="flash-sale-product__item-name">
+                                                Con Quay Sáng Tạo Mới Bút Xoay Giảm Căng Thẳng Cho Trẻ Em Người Lớn Con Quay Tay Chống Trượt Bằng Nhựa Cho Học Sinh Văn Phòng Phẩm Trẻ Em
+                                            </h4>
+                                            <p class="flash-sale-product__item-price">7200 ₫</p>
+                                            <div class="flash-sale-product__item-discount">
+                                                <span class="flash-sale-product__item-old-price">15.000 ₫</span>
+                                                <span class="flash-sale-product__item-percent">-52%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="flash-sale-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/bba8ba24bf20665f6d3489470e866272.jpg_400x400q80.jpg_.webp" alt="" class="flash-sale-product__item-img">
+                                        <div class="flash-sale-product__item-body">
+                                            <h4 class="flash-sale-product__item-name">
+                                                [Tặng dây giày] Giày thể thao nữ số 123456789
+                                            </h4>
+                                            <p class="flash-sale-product__item-price">77000 ₫</p>
+                                            <div class="flash-sale-product__item-discount">
+                                                <span class="flash-sale-product__item-old-price">150.000 ₫</span>
+                                                <span class="flash-sale-product__item-percent">-49%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="flash-sale-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/a4a7118cbd2df034144fa94b7bb01afd.jpg_400x400q80.jpg_.webp" alt="" class="flash-sale-product__item-img">
+                                        <div class="flash-sale-product__item-body">
+                                            <h4 class="flash-sale-product__item-name">
+                                                Áo thun nữ in chữ Diamond đơn giản chất vải thun cotton thoáng mát freesize dưới 55kg
+                                            </h4>
+                                            <p class="flash-sale-product__item-price">2900 ₫</p>
+                                            <div class="flash-sale-product__item-discount">
+                                                <span class="flash-sale-product__item-old-price">79.000 ₫</span>
+                                                <span class="flash-sale-product__item-percent">-63%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="flash-sale-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/836c7df4aae99d3c9b794c08e7c9b0ca.jpg_400x400q80.jpg_.webp" alt="" class="flash-sale-product__item-img">
+                                        <div class="flash-sale-product__item-body">
+                                            <h4 class="flash-sale-product__item-name">
+                                                Bộ ga gối Lờ Vê Gấu Rich 💖m2/m6/m8/2m💖 drap giường poly ga bọc đệm cute + 2 vỏ gối nằm cute - Nguyệt Ánh Bedding
+                                            </h4>
+                                            <p class="flash-sale-product__item-price">54000 ₫</p>
+                                            <div class="flash-sale-product__item-discount">
+                                                <span class="flash-sale-product__item-old-price">120.000 ₫</span>
+                                                <span class="flash-sale-product__item-percent">-55%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="flash-sale-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/5a607941c02715c045cb125a2c4648aa.jpg_400x400q80.jpg_.webpp" alt="" class="flash-sale-product__item-img">
+                                        <div class="flash-sale-product__item-body">
+                                            <h4 class="flash-sale-product__item-name">
+                                                [HCM]Quần Jean Nữ Quần Bò Nữ Cào Co Giãn Dáng Skinny Lưng Cao Nhiều Màu
+                                            </h4>
+                                            <p class="flash-sale-product__item-price">85728 ₫</p>
+                                            <div class="flash-sale-product__item-discount">
+                                                <span class="flash-sale-product__item-old-price">258.000 ₫</span>
+                                                <span class="flash-sale-product__item-percent">-67%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bộ sưu tập -->
+                    <div class="collection">
+                        <div class="title-wrap">
+                            <span class="title">Bộ sưu tập</span>
+                            <a href="" class="see-more-link">
+                                Xem thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="collection__product-list">
+                            <div class="collection__product">
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Ưu đãi cho chàng
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">9,349 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/9865ea4b797717eb827dcc41308c6bd1.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/e14c5e89616120e7ad30f28c5943e5fe.png_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/18c3c46cab08ac525a6185e18029f84f.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Cuối năm mua gì?
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">3,754 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/3b22cb61bf906d74208b64fd0ce9456c.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/99fc0e8d65d1b78ad8d58edb37638356.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/18723fa95d6f625a42be593c78d9233d.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Nội thất sale khủng 12.12
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">290 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/1d87f6c3021f907031379802091f3f73.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/ff/kf/Sa555b57be8e34ea19a59c505edf31b103.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/ef22a374d7d6a7979643e728aecae485.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Sống khỏe mỗi ngày
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">1,831 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/8f2ec5faccc2e4c06e24ed5d6f072621.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/2df31bf9b7d3141f93e853897b14df51.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/352a7e2d6f94e8f54ca2de794f888247.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collection__product">
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Cuối năm sale đỉnh
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">3,843 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/fd183a51e2b7393ec2869ec3ad4acaef.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/79a65631d21946b2b8f021978751f563.png_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/b850883b43423acbd30f85f33c1dc5fc.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Ưu đãi cho nàng
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">12,065 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/9356936ae5b89763adb5690883a4ca8c.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/15a3bcc19593e718f5cae29b4c4d97e0.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/3f87e87eeb6eb16a2c0b6a1f94325e6d.png_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Dụng cụ gia đình tiện ích
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">300 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/381ec8fccc1ea3ffbd3ec0b0207a55ed.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/62fcce53d7caa1eb28d9b392793567c8.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/0179361501004a74a4de53698c700d17.png_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                                <div class="collection__product-wrap">
+                                    <h4 class="collection__product-heading">
+                                        Áo thun năng động
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </h4>
+                                    <span class="collection__product-quantity">440 sản phẩm</span>
+                                    <div class="collection__product-list-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/6441e520d7dd717ae4d06bdf371a2c1b.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/fac7ab97c39ca45f0fe7f1e8611b5c00.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/4eb9d8a345effb75de2c8af6d9921414.jpg_150x150q80.jpg_.webp" alt="" class="collection__product-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LazMall -->
+                    <div class="lazmall">
+                        <div class="title-wrap">
+                            <span class="title">LazMall</span>
+                            <a href="" class="see-more-link">
+                                Xem thêm
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <div class="lazmall-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2">
+                                    <div class="lazmall-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/964a907e4be8154e622473d04d8b8494.jpg_400x400q80.jpg_.webp" alt="" class="lazmall-product__item-img">
+                                        <div class="brand-overlay"></div>
+                                        <div class="lazmall-product__item-logo">
+                                            <img src="https://lzd-img-global.slatic.net/g/shop/9bca3971d5f24d2ee5008117df7d3180.jpeg_120x120q80.jpg_.webp" alt="" class="lazmall-product__item-logo-img">
+                                        </div>
+                                        <h4 class="lazmall-product__item-name">VINANOI Shop</h4>
+                                        <p class="lazmall-product__item-slogan">VINANOI Shop</p>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="lazmall-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/24f23b360c502efc0eaba1c2db63042d.png_400x400q80.jpg_.webp" alt="" class="lazmall-product__item-img">
+                                        <div class="brand-overlay"></div>
+                                        <div class="lazmall-product__item-logo">
+                                            <img src="https://lzd-img-global.slatic.net/g/shop/6e6869c8ebef47dfb486bc336a5cd1b4.jpeg_120x120q80.jpg_.webp" alt="" class="lazmall-product__item-logo-img">
+                                        </div>
+                                        <h4 class="lazmall-product__item-name">Nhang Xanh - Nhang Sạch</h4>
+                                        <p class="lazmall-product__item-slogan">Nhang Xanh - Nhang Sạch</p>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="lazmall-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/live/vn/p/525976b01a9c8f3c31a9b1f1a9fd678f.jpg_400x400q80.jpg_.webp" alt="" class="lazmall-product__item-img">
+                                        <div class="brand-overlay"></div>
+                                        <div class="lazmall-product__item-logo">
+                                            <img src="https://lzd-img-global.slatic.net/g/ot/shop/cc1a6051fabf4bc38f360fdc93072370.png_120x120q80.jpg_.webp" alt="" class="lazmall-product__item-logo-img">
+                                        </div>
+                                        <h4 class="lazmall-product__item-name">AZ PRICE VIETNAM</h4>
+                                        <p class="lazmall-product__item-slogan">AZ PRICE VIETNAM</p>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="lazmall-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/a7e13da433bc389a31baea288e39f8a2.png_400x400q80.jpg_.webp" alt="" class="lazmall-product__item-img">
+                                        <div class="brand-overlay"></div>
+                                        <div class="lazmall-product__item-logo">
+                                            <img src="https://lzd-img-global.slatic.net/live/vn/ot/b6479091b8549e4949be3296e08148fd.jpg_120x120q80.jpg_.webp" alt="" class="lazmall-product__item-logo-img">
+                                        </div>
+                                        <h4 class="lazmall-product__item-name">Medela</h4>
+                                        <p class="lazmall-product__item-slogan">Là sự lựa chọn của mẹ</p>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="lazmall-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/81d487197b8957d8a6a805aa14ece58d.jpg_400x400q80.jpg_.webp" alt="" class="lazmall-product__item-img">
+                                        <div class="brand-overlay"></div>
+                                        <div class="lazmall-product__item-logo">
+                                            <img src="https://lzd-img-global.slatic.net/g/shop/c2d57e593283b035ca144e30da9ec8f4.jpeg_120x120q80.jpg_.webp" alt="" class="lazmall-product__item-logo-img">
+                                        </div>
+                                        <h4 class="lazmall-product__item-name">Bose</h4>
+                                        <p class="lazmall-product__item-slogan">Bose</p>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2">
+                                    <div class="lazmall-product__item">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/c9393e9b7ad9dfc3e543d37ff9b9a693.jpg_400x400q80.jpg_.webp" alt="" class="lazmall-product__item-img">
+                                        <div class="brand-overlay"></div>
+                                        <div class="lazmall-product__item-logo">
+                                            <img src="https://lzd-img-global.slatic.net/g/shop/ac6ddda592ea02907f5f693a634d6da8.jpeg_120x120q80.jpg_.webp" alt="" class="lazmall-product__item-logo-img">
+                                        </div>
+                                        <h4 class="lazmall-product__item-name">Túi xách CNT</h4>
+                                        <p class="lazmall-product__item-slogan">Túi xách CNT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Danh mục ngành hàng -->
+                    <div class="industry">
+                        <div class="title-wrap">
+                            <span class="title">Danh mục ngành hàng</span>
+                        </div>
+                        <div class="industry-product-list">
+                            <div class="industry-product">
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/c12d8293f1021c80a723e5839675ea50.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Bộ chăn ga gối đệm</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/27a75f9d3ed7e3e0f820ec05f114127b.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Áo thun nữ</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/0318544c7b988b0163ea11ef7369a427.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Bút</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/4b8725b3947c23b75c6fec747bb5845e.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Chăm sóc răng miệng</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/6d2c9eb3e80b4796cf7afdae36ae6802.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Tai nghe nhét, tai nghe không dây</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/12bb17133bb888ee6867d6f58282288e.png_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Điện thoại di động</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/5acd86b732492063838798d2d2ce2815.png_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Loa không dây & Loa Bluetooth</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/4486bf6da239acf8d71527388434d611.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Giày chạy bộ nam</h5>
+                                </div>
+                            </div>
+                            <div class="industry-product">
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/84f866adbb31cca201c24036a8e086c5.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Dưỡng da & Serum</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/d41c427a6002c58b270afdfff7e073b8.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Áo thun nam</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/e8c2af535dfcadf273fc99b0a24eca11.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Đồng hồ thông minh</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/e1a7bc333ef984b4e25779691265e885.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Giày sneaker nam</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/a0fe25444bc8624144892fd9f16e1bb5.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Cáp & Dock sạc</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/ff/kf/Se9eae9befe0b4efe9bc8ccf97876db33j.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Đầm</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/g/p/4b96d6ac3e7090ec4e2a0a8304cd15e2.jpg_170x170q80.jpg_.webpp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Bộ quần áo bé gái</h5>
+                                </div>
+                                <div class="industry-product__item">
+                                    <div class="industry-product__img-container">
+                                        <img src="https://lzd-img-global.slatic.net/live/vn/p/f68f9b0d1d8b5855df50344c28b8e5b4.jpg_170x170q80.jpg_.webp" alt="" class="industry-product__item-img">
+                                    </div>
+                                    <h5 class="industry-product__item-name">Pin sạc dự phòng</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dành riêng cho bạn -->
+                    <div class="exclusively">
+                        <div class="title-wrap">
+                            <span class="title">Dành riêng cho bạn</span>
+                        </div>
+                        <div class="exclusively-product-list">
+                            <div class="grid__row">
+                                <div class="exclusively-product">
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/ff/kf/S4b9566f04eee4f7bb693f560ae1a51e5H.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        [Ảnh thật][Rẻ vô địch][Chính hãng]Muối tôm như ý thượng hạng 400g
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">79.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">90.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-12%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(88)</span>
+                                                        <span class="exclusively-product__item-origin">Đồng Tháp</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/5e9f5bdcbdbd0db082de8020332327d0.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        CAT MIN 8L - Cát vệ sinh cho mèo(Nhật Bản)
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">43.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">45.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-4%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(327)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/ff/kf/Sff0fca8e3efa4601a2ed673fed3574866.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        DẦU VIEM XOANG 3ml (COMBO 10chai vàng)
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">60.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price"></span>
+                                                        <span class="exclusively-product__item-percent"></span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(221)</span>
+                                                        <span class="exclusively-product__item-origin">An Giang</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/dc97e771145e73adb439e789b0c7ab84.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall">
+                                                        <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" alt="" class="exclusively-product__item-lazmall-img">
+                                                    </div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        IMAGIC Cọ Che Khuyết Điểm Đầu Tròn Cọ Trang Điểm Cầm Tay Chuyên Nghiệp
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">25.936 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">52.900 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-51%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(201)</span>
+                                                        <span class="exclusively-product__item-origin">Overseas</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/9129deb88bb17a78627d6b16bdf4ced4.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        [HCM]Chuột không dây FORTER V181 (màu đen) thiết kế nhỏ gọn dễ cầm và di chuyển công nghệ tiên tiến độ nhạy cao+PIN
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">39.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price"></span>
+                                                        <span class="exclusively-product__item-percent"></span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(2065)</span>
+                                                        <span class="exclusively-product__item-origin">Hồ Chí Minh</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/861e0b32b400724337cbbc91ce78a2f5.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        [Kèm Quà] Sữa Chống Nắng Dưỡng Da Trắng Mịn Tối Ưu Sunplay Skin Aqua Clear White SPF50+ PA++++ (55g/25g)
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">83.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">120.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-31%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(203)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exclusively-product">
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/9cf4ae6ca7ab9d40337ca5bcf09e3b57.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall">
+                                                        <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" alt="" class="exclusively-product__item-lazmall-img">
+                                                    </div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Serum (Tinh Chất) Vitamin C Zakka Naturals Glow Fruit Brightening Trắng Da, Mờ Thâm, Căng Bóng Và Chống Lão Hóa 20g
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">450.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">480.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-8%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(739)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/c9bbb1d917ec715f820801e0f08a20a8.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall">
+                                                        <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" alt="" class="exclusively-product__item-lazmall-img">
+                                                    </div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Bình nước học sinh Goki Rudy 450ml, bình nước đi học, bình nước cho bé, bình nước học sinh cấp 1, bình nước trẻ em đi học nhựa PP an toàn, có ống hút, nắp bật tiện dụng, không mùi, không rỉ nước
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">58.283 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">118.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-51%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(108)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/c9481e5b9e4fed20676d45655622a2ef.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        [HCM]Áo Thun Unisex Nam Nữ Form Rộng Tay Lỡ TOGA HIMIKO NỮ SÁT THỦ HỌC ĐƯỜNG Thời Trang Anime Nhật Bản  Men Lì Fashion Độc Đẹp Vải Dày Mịn Thoáng Mát Thiết Kế Thời Trang Kiểu Dáng Năng Động Trẻ Trung [ CÓ HÌNH ẢNH VIDEO THẬT ]
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">35.100 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">70.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-50%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(1703)</span>
+                                                        <span class="exclusively-product__item-origin">Hồ Chí Minh</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/ff/kf/Sf53fb814d0004ec4bb740acfe7c73e44t.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Quần Sọt Kaki Nam Lưng Thun T334 ]Quần short nam
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">12.279 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">13.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-6%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(2883)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/966c14c7ed3c6c0c7ee5774b78dc3c12.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Khăn lau chùi đa năng, khăn lau nhà bếp, khăn lau tay nhà bếp 2 mặt thấm hút nhanh vải mịn lau tay
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">926 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">1.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-7%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(26)</span>
+                                                        <span class="exclusively-product__item-origin">Hà Nội</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/fcddc4da3cf99a5ce75d62fdacd12a7e.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        LOGO STICKER MINI DÁN XE MÁY L 08  { PHỤNG DECAL }
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">10.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">20.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-50%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(123)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exclusively-product">
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/0ae2d67329798b5ee0c3169f213a2f39.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall">
+                                                        <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" alt="" class="exclusively-product__item-lazmall-img">
+                                                    </div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Dầu tẩy trang Olive DHC Deep Cleansing Oil (L) 200ml
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">615.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">799.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-23%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(73)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/2fbd39f1700f6a6b01a7a6179bed0e53.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall">
+                                                        <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" alt="" class="exclusively-product__item-lazmall-img">
+                                                    </div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Sữa rửa mặt sáng da và dưỡng ẩm Truesky Glutathione Cleanser chiết xuất sữa dê 50g
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">55.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">100.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-45</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(1186)</span>
+                                                        <span class="exclusively-product__item-origin">Hồ Chí Minh</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/a2eb652d0206492aefbbc51531b4bb12.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        ÁO KHOÁC HOODIE NAM NỮ UNISEX TRƠN NEW CHẤT NỈ DÀY CHỐNG LẠNH, NẮNG NÓNG, THU ĐÔNG PHOM RỘNG NHẬT BẢN CAO CẤP 1HITSHOP - TOKYO FASHION
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">36.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">70.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-49%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(240))</span>
+                                                        <span class="exclusively-product__item-origin">Hồ Chí Minh</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/eecfeedd4136e225aea6fed90f07eea1.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Tinh dầu xoa bóp Đài Loan tăng kích thước, tăng độ to dài Tonohime, Hun đúc tình cảm lứa đôi với 18Cm
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">85.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">105.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-19%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(81)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/ff/kf/S8e86e98523f3460cb099d21b73e953aeF.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        Chân váy ngắn siêu hot xỏ dây 2 bên nữ tính
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">45.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price"></span>
+                                                        <span class="exclusively-product__item-percent"></span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(55)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/52e9d4d216bfaf3580f8f84a003869de.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        [Đặt ngay giảm 40k] Đầm maxi vintage mặc đi chơi, đầm tiểu thư tay phồng, đầm cổ vuông xếp ly, đầm basic Hàn Quốc, váy xòe bồng dài thanh lịch
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">83.719 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">179.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-53%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(60)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exclusively-product">
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/0d19c5bed63025797a5c478aa125c742.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall">
+                                                        <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" alt="" class="exclusively-product__item-lazmall-img">
+                                                    </div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Combo 3 Sữa tắm hương nước hoa Enchanteur Delightful 650gr/ Chai
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">369.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">561.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-34%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(101)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/cbdd48f087cad0e7dee82adeb8ec7688.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall">
+                                                        <img src="https://lzd-img-global.slatic.net/g/tps/tfs/TB1r3Rqi2zO3e4jSZFxXXaP_FXa-94-28.png" alt="" class="exclusively-product__item-lazmall-img">
+                                                    </div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Dung dịch loại bỏ tế bào chết Paula’s Choice Skin Perfecting 2% BHA Liquid Exfoliant 30 ml 2016
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">325.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">399.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-19%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(3401)</span>
+                                                        <span class="exclusively-product__item-origin">Hà Nội</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/12ffb550bdbb702a81320c72e39b376e.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Quần jean nữ lưng cao bigsize từ 50-105kg GOZ Boutique co giãn 4 chiều có túi, quần bò cạp cao skinny size đại trơn dài, vải pha tơ nhân tạo co giãn mềm mịn mặc mát thấm mồ hôi
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">137.359 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">300.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-54%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(533)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/6ff01ba2781370e65fe3e9bc64077044.png_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        Tranh dán tường one piece, bộ 5 tranh ghép dán tường
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">25.886 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">50.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-48%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(127)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/1447773edd8fae33ebe6d8e834582137.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        <img src="https://lzd-img-global.slatic.net/g/gcp/lazada/9862ad5b-827b-4fc1-b069-b91cf98e477c_ALL-68-18.png#width=68&height=18" alt="" class="exclusively-product__item-sale">
+                                                        MỀN TUYẾT MỀM MỊN - MỀN TUYẾT DÀY DẶN VÀ CỰC KỲ ẤM . CHĂN TUYẾT NHUNG MỊN.
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">75.089 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">120.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-37%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(55)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2">
+                                        <div class="exclusively-product__item-wrap">
+                                            <a class="exclusively-product__item" href="#">
+                                                <div class="exclusively-product__item-background">
+                                                    <img src="https://lzd-img-global.slatic.net/g/p/51a59071645190753a4a32307cee8903.jpg_400x400q80.jpg_.webp" alt="" class="exclusively-product__item-img">
+                                                </div>
+                                                <div class="exclusively-product__item-body">
+                                                    <div class="exclusively-product__item-lazmall"></div>
+                                                    <div class="exclusively-product__item-name">
+                                                        Màng bọc thực phẩm co giãn siêu dai có chun hình túi gấu set 90-100 chiếc - Tái sử dụng
+                                                    </div>
+                                                    <p class="exclusively-product__item-price">8.000 ₫</p>
+                                                    <div class="exclusively-product__item-discount">
+                                                        <span class="exclusively-product__item-old-price">16.000 ₫</span>
+                                                        <span class="exclusively-product__item-percent">-50%</span>
+                                                    </div>
+                                                    <div class="exclusively-product__rating-wrap">
+                                                        <div class="exclusively-product__item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span class="exclusively-product__item-sold">(416)</span>
+                                                        <span class="exclusively-product__item-origin"></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-more">
+                        <button class="load-more-btn">TẢI THÊM</button>
+                    </div>
+
+                    <div class="voucher">
+                        <div class="grid__row">
+                            <div class="grid__column-4">
+                                <a href="#" class="voucher-link">
+                                    <img src="https://icms-image.slatic.net/images/ims-web/c9a58d95-0cf3-4dee-85ff-cc41cd2e1f39.png" alt="" class="voucher-img">
+                                </a>
+                            </div>
+                            <div class="grid__column-4">
+                                <a href="#" class="voucher-link">
+                                    <img src="https://icms-image.slatic.net/images/ims-web/e12356fe-620a-47ec-8a35-1eb5d2586c17.png" alt="" class="voucher-img">
+                                </a>
+                            </div>
+                            <div class="grid__column-4">
+                                <a href="#" class="voucher-link">
+                                    <img src="https://icms-image.slatic.net/images/ims-web/b558b2e2-01ec-4d06-a00c-dac433e04a61.png" alt="" class="voucher-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer-first">
+                    <div class="grid__row">
+                        <div class="grid__column-3">
+                            <h3 class="footer-first__heading">LIÊN HỆ VỚI LAZADA</h3>
+                            <ul class="footer-first__list">
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Hotline & Chat trực tuyến (24/7)</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Trung tâm hỗ trợ</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Hướng dẫn đặt hàng</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Giao hàng & Nhận hàng</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Chính sách hàng nhập khẩu</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Hướng dẫn đổi trả hàng</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-3">
+                            <h3 class="footer-first__heading">LAZADA VIỆT NAM</h3>
+                            <ul class="footer-first__list">
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Tất cả danh mục</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Về Lazada Việt Nam</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Bán hàng cùng Lazada</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Chương trình Lazada Afﬁliate</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Tuyển dụng</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Điều khoản sử dụng</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Chính sách bảo mật</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Báo chí</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Bảo vệ quyền sở hữu trí tuệ</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Quy chế hoạt động sàn Lazada</a>
+                                </li>
+                                <li class="footer-first__list-item">
+                                    <a href="" class="footer-first__item-link">Quy trình giải quyết tranh chấp, khiếu nại</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__column-6">
+                            <div class="footer-first__download">
+                                <div class="footer-first__download-info">
+                                    <div class="footer-first__download-logo"></div>
+                                    <div class="footer-first__download-text">
+                                        <p class="footer-first__download-text-1">Go where your heart beats</p>
+                                        <p class="footer-first__download-text-2">Tải App Lazada</p>
+                                    </div>
+                                </div>
+                                <div class="footer-first__download-app">
+                                    <a href="https://bit.ly/lazada-ios-app?spm=a2o4n.tm80093199.header.3.60275995CdJCBk&scm=1003.4.icms-zebra-5001419-2692842.OTHER_5286164141_2448056" class="footer-first__download-link">
+                                        <img src="./assets/img/app_store.png" alt="App Store" class="footer-first__qr-download-img">
+                                    </a>
+                                    <a href="https://bit.ly/lazada-android-app?spm=a2o4n.tm80093199.header.4.60275995CdJCBk&scm=1003.4.icms-zebra-5001419-2692842.OTHER_5286164141_2448056" class="footer-first__download-link">
+                                        <img src="./assets/img/google_play.png" alt="Google Play" class="footer-first__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer-first__company">
+                                <p>CÔNG TY TNHH RECESS</p>
+                                <p>Giấy CNĐKDN: 0308808576 – Ngày cấp: 06/5/2009, được sửa đổi lần thứ 19 ngày 15/8/2019.</p>
+                                <p>Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở kế hoạch và Đầu tư TP.HCM</p>
+                                <p>Địa chỉ đăng ký kinh doanh: Tầng 19, Tòa nhà Saigon Centre – Tháp 2, 67 Lê Lợi, Phường Bến Nghé, Quận 1, Tp. Hồ Chí Minh, Việt Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2022 - Copyright
+                    <strong>
+                        Huy Trần
+                    </strong>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <!-- <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body"> -->
+            <!-- Register form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+    
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy">
+                            Tôi đã đọc và đồng ý với
+                            <a href="" class="auth-form__text-link">Điều Khoản Sử Dụng</a> &
+                            <a href="" class="auth-form__text-link">Chính Sách Bảo Mật của Lazada</a>
+                            , bao gồm quyền thu thập, sử dụng, và tiết lộ dữ liệu cá nhân của tôi theo pháp luật quy định.
+                        </p>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn btn--nomal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>    
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-f"></i>
+                        <span class="auth-form__socials-label">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google-plus-g"></i>
+                        <span class="auth-form__socials-label">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Login form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+    
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__forget">Quên mật khẩu?</a>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn btn--nomal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>    
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-f"></i>
+                        <span class="auth-form__socials-label">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google-plus-g"></i>
+                        <span class="auth-form__socials-label">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>
